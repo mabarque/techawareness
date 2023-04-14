@@ -7,6 +7,7 @@
     "start": "expo start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web"
@@ -38,7 +39,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "react-refresh": "^0.14.0",
+    "react-scripts": "^5.0.1"
   },
   "private": true
 }
