@@ -1,5 +1,5 @@
 import { View, Text, Image, ScrollView, TouchableOpacity, Linking } from "react-native";
-import styles from "../styles/Style.js";
+import styles from "./styles/Style.js";
 
 const HomePage = ({ setSelectedTab }) => (
   <View style={{ flex: 1 }}>
@@ -7,7 +7,7 @@ const HomePage = ({ setSelectedTab }) => (
       <View style={styles.container}>
         <Image
           style={styles.backgroundImage}
-          source={require('../assets/homepic.jpeg')}
+          source={require('/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/homepic.jpeg')}
         />
         <Text style={styles.headerupMiddle}>
           Rising Technology-Facilitated Abuse and the Alarming Statistics of
@@ -16,7 +16,7 @@ const HomePage = ({ setSelectedTab }) => (
         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
           <Image
             style={styles.icon1}
-            source={require('../assets/icon1.png')}
+            source={require('/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/icon1.png')}
           />
           <Text style={styles.headerMiddle}>
           97% of domestic violence victim advocates report that their clients have experienced harassment, monitoring, and/or threats using technology (source: 2018 NNEDV Technology Summit Report)
@@ -25,7 +25,7 @@ const HomePage = ({ setSelectedTab }) => (
         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
           <Image
             style={styles.icon2}
-            source={require('../assets/icon1.png')}
+            source={require('/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/icon1.png')}
           />
           <Text style={styles.headerLow}>
           1 in 7 women have reported being threatened with physical harm via technology (source: 2019 Norton LifeLock Cyber Safety Insights Report)
@@ -40,7 +40,7 @@ const HomePage = ({ setSelectedTab }) => (
           <View style={styles.imageTextWrapper}>
             <Image
               style={styles.smallImage}
-              source={require("../assets/fourthimage.jpeg")}
+              source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fourthimage.jpeg")}
             />
             <Text style={styles.imageText}>Protecting Yourself Online:</Text>
             <Text style={styles.imageTextBelow}>
@@ -57,7 +57,7 @@ const HomePage = ({ setSelectedTab }) => (
           <View style={styles.imageTextWrapper}>
             <Image
               style={styles.smallImage}
-              source={require("../assets/second.jpeg")}
+              source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/second.jpeg")}
             />
             <Text style={styles.imageText}>
               Recognizing the Signs of Abuse:
@@ -73,7 +73,7 @@ const HomePage = ({ setSelectedTab }) => (
           <View style={styles.imageTextWrapper}>
             <Image
               style={styles.smallImage}
-              source={require("../assets/thirdimage.jpeg")}
+              source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/thirdimage.jpeg")}
             />
             <Text style={styles.imageText}>Introduction to IoT Devices:</Text>
             <Text style={styles.imageTextBelow}>

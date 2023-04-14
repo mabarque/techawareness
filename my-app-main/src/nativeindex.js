@@ -31,7 +31,7 @@ const PurpleHeader = () => {
   React.useEffect(() => {
     const loadFonts = async () => {
       await Font.loadAsync({
-        Nunito: require("../assets/fonts/Nunito.ttf"),
+        Nunito: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/Nunito.ttf"),
       });
       setFontLoaded(true);
     };

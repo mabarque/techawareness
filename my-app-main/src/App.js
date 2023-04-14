@@ -1,6 +1,6 @@
 import { Platform } from 'react-native';
-import WebComponent from "./screens/web.js";
-import NativeComponent from "./screens/nativeindex.js";
+import WebComponent from "web.js";
+import NativeComponent from "nativeindex.js";
 
 const MyComponent = () => {
   return (

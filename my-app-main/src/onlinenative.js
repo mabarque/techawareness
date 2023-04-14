@@ -44,7 +44,7 @@ const OnlineNative = () => {
       <View style={styles.containerIntro}>
       <Text style={[styles.title, { marginBottom: 10 }]}>Digital Self-Defense: Stay Safe Online</Text>
         <Text style={styles.paragraph}>Staying safe online is important due to the increasing risk of cyberbullying, online harassment, and stalking. To protect our online identity and mental health, we need to prioritize social media safety by being aware of the risks and implementing safe practices. By following some simple tips, we can enjoy the benefits of social media without compromising our privacy and security.</Text>
-        <Image source={require('../assets/triangle.jpg')} style={styles.imageIntro} />
+        <Image source={require('/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/triangle.jpg')} style={styles.imageIntro} />
       </View>
       <View style={styles.titleContainer}>
         <Text style={styles.title}>This is an example of what not to post online</Text>
@@ -225,7 +225,7 @@ const OnlineNative = () => {
                 account.
           </Text>
       </View>
-      <Image source={require('../assets/multi.png')} style={styles.imageMulti} />
+      <Image source={require('/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/multi.png')} style={styles.imageMulti} />
     </ScrollView>
     );
 };

@@ -32,7 +32,7 @@ const IoTNative = () => {
   return (
     <ScrollView style={styles.container}>
       <View >
-        <Image source={require('./iotImage/iot.png')} style={styles.image}/>
+        <Image source={require('../iotImage/iot.png')} style={styles.image}/>
       </View>
       <View style={styles.intro}>
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
-import styles2 from "../styles/Style.js";
+import styles2 from "./styles/Style.js";
 
 const IoT = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -18,7 +18,7 @@ const IoT = () => {
           <Text style={styles.bannerText}>
           Exploring the World of IoT Devices
           </Text>
-          <Image source={require("../assets/bulbicon.png")} style={styles.imageicon} />
+          <Image source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/bulbicon.png")} style={styles.imageicon} />
           <Text style={styles.subText}>
           IoT devices offer convenience and automation in various aspects of our lives, but they also present security risks and can be misused for domestic abuse or harassment. It's crucial to be aware of these risks and learn how to protect your privacy and security with our interactive home featuring common IoT devices.</Text>
         </View>
@@ -28,7 +28,7 @@ const IoT = () => {
         <Text style={styles.title}>
           Try our interactive home!
         </Text>
-        <Image source={require("../assets/home12.jpeg")} style={styles.image} />
+        <Image source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/home12.jpeg")} style={styles.image} />
         <TouchableOpacity
           style={[styles.popupButton, { top: "70%", left: "5%" }]}
           onPress={() =>
@@ -38,7 +38,7 @@ const IoT = () => {
           }
         >
           <Image
-            source={require("../assets/ring.png")}
+            source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/ring.png")}
             style={styles.popupImage}
           />
         </TouchableOpacity>
@@ -65,7 +65,7 @@ const IoT = () => {
           }
         >
           <Image
-            source={require("../assets/alexa.png")}
+            source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/alexa.png")}
             style={[styles.popupImage, { width: 100, height: 100 }]}
           />
         </TouchableOpacity>
@@ -78,7 +78,7 @@ const IoT = () => {
           }
         >
           <Image
-            source={require("../assets/therm.png")}
+            source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/therm.png")}
             style={[styles.popupImage, { width: 100, height: 100 }]}
           />
         </TouchableOpacity>
@@ -91,7 +91,7 @@ const IoT = () => {
           }
         >
           <Image
-            source={require("../assets/lock.png")}
+            source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/lock.png")}
             style={[styles.popupImage, { width: 160, height: 160 }]}
           />
         </TouchableOpacity>
@@ -104,7 +104,7 @@ const IoT = () => {
           }
         >
           <Image
-            source={require("../assets/tv.png")}
+            source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/tv.png")}
             style={[styles.popupImage, { width: 80, height: 80 }]}
           />
         </TouchableOpacity>
@@ -117,7 +117,7 @@ const IoT = () => {
           }
         >
           <Image
-            source={require("../assets/watch.png")}
+            source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/watch.png")}
             style={[styles.popupImage, { width: 170, height: 170 }]}
           />
         </TouchableOpacity>
@@ -130,7 +130,7 @@ const IoT = () => {
           }
         >
           <Image
-            source={require("../assets/plug.png")}
+            source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/plug.png")}
             style={[styles.popupImage, { width: 180, height: 180 }]}
           />
         </TouchableOpacity>
@@ -143,7 +143,7 @@ const IoT = () => {
           }
         >
           <Image
-            source={require("../assets/cctv.png")}
+            source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/cctv.png")}
             style={[styles.popupImage, { width: 180, height: 180 }]}
           />
         </TouchableOpacity>

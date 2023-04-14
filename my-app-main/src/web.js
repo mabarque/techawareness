@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import { View, Text, StatusBar, Platform } from "react-native";
-import {
-  NavigationContainer,
-  SplashScreen,
-} from "@react-navigation/native";
+import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import * as Font from "expo-font";
-import styles from "../styles/Style.js";
-import Quiz from "./checklist.js";
-import DeviceSafe from "./devicesafety.js";
+import styles from "./styles/Style.js";
+import Identify from "./identify.js";
+import DeviceSafe from "./webdevicesafety.js";
 import MediaSafety from "./onlinesafety.js";
 import HomePage from "./home.js";
 import IoT from "./iot.js";
@@ -21,36 +18,64 @@ const linking = {
     screens: {
       TechAwareness: "",
       PersonalDeviceSecurity: ":id/personal-device-security",
-      OnlineSafety: ":id/OnlineSafety",
+      MediaSafety: ":id/MediaSafety",
       Identifytheabuse: ":id/Identifytheabuse",
       IoTAwareness: ":id/IoTAwareness",
     },
   },
 };
 
-
 const PurpleHeader = () => {
   const [selectedTab, setSelectedTab] = useState("TechAwareness");
   const [fontLoaded, setFontLoaded] = useState(false);
 
+  React.useEffect(() => {
+    (async () => {
+      await Font.loadAsync({
+        Nunito: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/Nunito.ttf"),
+        Exo: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/Exo.ttf"),
+        Anton: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/Anton-Regular.ttf"),
+        GolosBold: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/GolosText-Bold.ttf"),
+        GolosRegular: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/GolosText-Regular.ttf"),
+        Lemon: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/Lemon-Regular.ttf"),
+        fontcooper: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/Cooper.ttf"),
+        Sans: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/Sans-regular.ttf"),
+        Seriff: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/Seriff.ttf"),
+        genevafont: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/Geneva.ttf"),
+      });
+      setFontLoaded(true);
+    })();
+  }, []);
 
- return (
-
+  return (
     <NavigationContainer linking={linking}>
       <StatusBar backgroundColor="#25064c" barStyle="light-content" />
       <Stack.Navigator>
         {selectedTab === "TechAwareness" && (
-          <Stack.Screen name="TechAwareness" component={TechAwareness} />
+          <Stack.Screen
+            name="TechAwareness"
+            component={(props) => (
+              <HomePage {...props} setSelectedTab={setSelectedTab} />
+            )}
+          />
         )}
+
         {selectedTab === "PersonalDeviceSecurity" && (
           <Stack.Screen
             name="PersonalDeviceSecurity"
             component={PersonalDeviceSecurity}
           />
         )}
-        {selectedTab === "OnlineSafety" && (
-          <Stack.Screen name="OnlineSafety" component={OnlineSafety} />
+
+        {selectedTab === "MediaSafety" && (
+          <Stack.Screen
+            name="MediaSafety"
+            component={(props) => (
+              <MediaSafety {...props} setSelectedTab={setSelectedTab} />
+            )}
+          />
         )}
+
         {selectedTab === "Identifytheabuse" && (
           <Stack.Screen name="Identifytheabuse" component={Identifytheabuse} />
         )}
@@ -79,9 +104,9 @@ const PurpleHeader = () => {
         <View style={styles.headerTabs}>
           <Text
             style={styles.headerText}
-            onPress={() => setSelectedTab("OnlineSafety")}
+            onPress={() => setSelectedTab("MediaSafety")}
           >
-            OnlineSafety
+            Digital Security
           </Text>
         </View>
 
@@ -90,7 +115,7 @@ const PurpleHeader = () => {
             style={styles.headerText}
             onPress={() => setSelectedTab("Identifytheabuse")}
           >
-            Identifytheabuse
+            Spot the Signs
           </Text>
         </View>
 
@@ -99,7 +124,7 @@ const PurpleHeader = () => {
             style={styles.headerText}
             onPress={() => setSelectedTab("IoTAwareness")}
           >
-            IoTAwareness
+            Internet of Things Safety
           </Text>
         </View>
       </View>
@@ -109,31 +134,31 @@ const PurpleHeader = () => {
 
 const TechAwareness = () => (
   <View style={styles.container}>
-    <HomePage/>
+    <HomePage />
   </View>
 );
 
 const PersonalDeviceSecurity = () => (
   <View style={styles.container}>
-    <DeviceSafe/>
+    <DeviceSafe />
   </View>
 );
 
 const OnlineSafety = () => (
   <View style={styles.container}>
-    <MediaSafety/>
+    <MediaSafety />
   </View>
 );
 
 const Identifytheabuse = () => (
   <View style={styles.container}>
-    <Quiz/>
+    <Identify />
   </View>
 );
 
 const IoTAwareness = () => (
   <View style={styles.container}>
-    <IoT/>
+    <IoT />
   </View>
 );
 

@@ -13,7 +13,7 @@ import {
   TouchableHighlight
 } from "react-native";
 import CustomTab from "./customtab.js";
-import styles2 from "../styles/Style.js";
+import styles2 from "./styles/Style.js";
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
@@ -72,7 +72,7 @@ const MediaSafety = ({ setSelectedTab }) => {
             <View style={styles.ParentImageContainer}>
               <Image
                 style={styles.rightImage}
-                source={require("../assets/onlinemedia.jpeg")}
+                source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/onlinemedia.jpeg")}
               />
             </View>
           </View>
@@ -113,7 +113,7 @@ const MediaSafety = ({ setSelectedTab }) => {
             <View style={styles.imageContainer}>
               <Image
                 style={styles.Cookiesimage}
-                source={require("../assets/cookiespic.png")}
+                source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/cookiespic.png")}
               />
             </View>
             <Text style={styles.title4}>
@@ -187,7 +187,7 @@ const MediaSafety = ({ setSelectedTab }) => {
             <View style={styles.imageContainer}>
               <Image
                 style={styles.Incognitoimage}
-                source={require("../assets/incognitoreasons.png")}
+                source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/incognitoreasons.png")}
               />
             </View>
             <Text style={styles.title4}>
@@ -251,7 +251,7 @@ const MediaSafety = ({ setSelectedTab }) => {
             <View style={styles.imageContainer}>
               <Image
                 style={styles.safetipsimage}
-                source={require("../assets/onlinetips.png")}
+                source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/onlinetips.png")}
               />
             </View>
 
@@ -268,7 +268,7 @@ const MediaSafety = ({ setSelectedTab }) => {
               <View style={styles.square}>
                 <View style={styles.profilePictureContainer}>
                   <Image
-                    source={require("../assets/family.jpeg")}
+                    source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/family.jpeg")}
                     style={styles.profilePicture}
                   />
                 </View>
