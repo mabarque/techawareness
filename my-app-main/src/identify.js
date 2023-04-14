@@ -221,7 +221,7 @@ const Quiz = () => {
       <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
         <View style={styles.container}>
           <ImageBackground
-            source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/cloud.jpg")}
+            source={require("./assets/cloud.jpg")}
             style={styles.backgroundImage}
             resizeMode="cover"
           >
@@ -286,7 +286,7 @@ const Quiz = () => {
     <View style={{ flex: 1 }}>
       <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
         <ImageBackground
-          source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/cloud.jpg")}
+          source={require("./assets/cloud.jpg")}
           style={styles.backgroundImage}
           resizeMode="cover"
         >

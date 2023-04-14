@@ -72,7 +72,7 @@ const MediaSafety = ({ setSelectedTab }) => {
             <View style={styles.ParentImageContainer}>
               <Image
                 style={styles.rightImage}
-                source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/onlinemedia.jpeg")}
+                source={require("./assets/onlinemedia.jpeg")}
               />
             </View>
           </View>
@@ -113,7 +113,7 @@ const MediaSafety = ({ setSelectedTab }) => {
             <View style={styles.imageContainer}>
               <Image
                 style={styles.Cookiesimage}
-                source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/cookiespic.png")}
+                source={require("./assets/cookiespic.png")}
               />
             </View>
             <Text style={styles.title4}>
@@ -187,7 +187,7 @@ const MediaSafety = ({ setSelectedTab }) => {
             <View style={styles.imageContainer}>
               <Image
                 style={styles.Incognitoimage}
-                source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/incognitoreasons.png")}
+                source={require("./assets/incognitoreasons.png")}
               />
             </View>
             <Text style={styles.title4}>
@@ -251,7 +251,7 @@ const MediaSafety = ({ setSelectedTab }) => {
             <View style={styles.imageContainer}>
               <Image
                 style={styles.safetipsimage}
-                source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/onlinetips.png")}
+                source={require("./assets/onlinetips.png")}
               />
             </View>
 
@@ -268,7 +268,7 @@ const MediaSafety = ({ setSelectedTab }) => {
               <View style={styles.square}>
                 <View style={styles.profilePictureContainer}>
                   <Image
-                    source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/family.jpeg")}
+                    source={require("./assets/family.jpeg")}
                     style={styles.profilePicture}
                   />
                 </View>

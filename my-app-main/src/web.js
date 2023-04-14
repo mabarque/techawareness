@@ -32,16 +32,16 @@ const PurpleHeader = () => {
   React.useEffect(() => {
     (async () => {
       await Font.loadAsync({
-        Nunito: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/Nunito.ttf"),
-        Exo: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/Exo.ttf"),
-        Anton: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/Anton-Regular.ttf"),
-        GolosBold: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/GolosText-Bold.ttf"),
-        GolosRegular: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/GolosText-Regular.ttf"),
-        Lemon: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/Lemon-Regular.ttf"),
-        fontcooper: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/Cooper.ttf"),
-        Sans: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/Sans-regular.ttf"),
-        Seriff: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/Seriff.ttf"),
-        genevafont: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/Geneva.ttf"),
+        Nunito: require("./assets/fonts/Nunito.ttf"),
+        Exo: require("./assets/fonts/Exo.ttf"),
+        Anton: require("./assets/fonts/Anton-Regular.ttf"),
+        GolosBold: require("./assets/fonts/GolosText-Bold.ttf"),
+        GolosRegular: require("./assets/fonts/GolosText-Regular.ttf"),
+        Lemon: require("./assets/fonts/Lemon-Regular.ttf"),
+        fontcooper: require("./assets/fonts/Cooper.ttf"),
+        Sans: require("./assets/fonts/Sans-regular.ttf"),
+        Seriff: require("./assets/fonts/Seriff.ttf"),
+        genevafont: require("./assets/fonts/Geneva.ttf"),
       });
       setFontLoaded(true);
     })();

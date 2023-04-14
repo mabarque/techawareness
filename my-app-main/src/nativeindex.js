@@ -31,7 +31,7 @@ const PurpleHeader = () => {
   React.useEffect(() => {
     const loadFonts = async () => {
       await Font.loadAsync({
-        Nunito: require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/fonts/Nunito.ttf"),
+        Nunito: require("./assets/fonts/Nunito.ttf"),
       });
       setFontLoaded(true);
     };
@@ -78,14 +78,14 @@ const PurpleHeader = () => {
             style={styles.headerButton}
             onPress={() => setSelectedTab("PersonalDeviceSecurity")}
           >
-            <Image source={require("../mainImage/PhysicalSec.png")} style={styles.headerImage} />
+            <Image source={require("./mainImage/PhysicalSec.png")} style={styles.headerImage} />
           </TouchableOpacity>
 
           <TouchableOpacity
             style={styles.headerButton}
             onPress={() => setSelectedTab("OnlineSafety")}
           >
-            <Image source={require("../mainImage/SocialMedia.png")} style={styles.headerImage} />
+            <Image source={require("./mainImage/SocialMedia.png")} style={styles.headerImage} />
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -93,7 +93,7 @@ const PurpleHeader = () => {
             onPress={() => setSelectedTab("Identifytheabuse")}
           >
             <Image
-              source={require("../mainImage/IdentifyingAb.png")}
+              source={require("./mainImage/IdentifyingAb.png")}
               style={styles.headerImage}
             />
           </TouchableOpacity>
@@ -102,7 +102,7 @@ const PurpleHeader = () => {
             style={styles.headerButton}
             onPress={() => setSelectedTab("IoTAwareness")}
           >
-            <Image source={require("../mainImage/IoT.png")} style={styles.headerImage} />
+            <Image source={require("./mainImage/IoT.png")} style={styles.headerImage} />
           </TouchableOpacity>
         </View>
     </NavigationContainer>

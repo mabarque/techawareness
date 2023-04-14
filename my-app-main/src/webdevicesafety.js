@@ -74,7 +74,7 @@ const DeviceSafe = () => {
         <View style={styles.bannerImageContainer}>
           <Image
             style={styles.bannerImage}
-            source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/ladyonphone.png")}
+            source={require("./assets/ladyonphone.png")}
           />
           <Text style={styles.bannerTitle}>Device Safety</Text>
         </View>
@@ -100,28 +100,28 @@ const DeviceSafe = () => {
               <Text style={styles.iconLabel}>IPHONES</Text>
               <Image
                 style={styles.iconImage}
-                source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/appleicon.png")}
+                source={require("./assets/appleicon.png")}
               />
             </TouchableOpacity>
             <TouchableOpacity onPress={() => togglePopup(infoText.Android.join('\n\n'))}>
               <Text style={styles.iconLabel}>ANDROIDS</Text>
               <Image
                 style={styles.iconImage}
-                source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/androidicon.png")}
+                source={require("./assets/androidicon.png")}
               />
             </TouchableOpacity>
             <TouchableOpacity onPress={() => togglePopup(infoText.Windows.join('\n\n'))}>
               <Text style={styles.iconLabel}>WINDOWS</Text>
               <Image
                 style={styles.iconImage}
-                source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/windowsicon2.png")}
+                source={require("./assets/windowsicon2.png")}
               />
             </TouchableOpacity>
             <TouchableOpacity onPress={() => togglePopup(infoText.MacOS.join('\n\n'))}>
               <Text style={styles.iconLabel}>MACBOOKS</Text>
               <Image
                 style={styles.iconImage}
-                source={require("/Users/mariabarqueroleitom/Documents/GitHub/techawareness/my-app-main/src/assets/macbook1.png")}
+                source={require("./assets/macbook1.png")}
               />
             </TouchableOpacity>
           </View>
