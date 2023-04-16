@@ -2,6 +2,9 @@ module.exports = function(api) {
   api.cache(true);
   return {
     presets: ['babel-preset-expo'],
-    plugins: ['@babel/plugin-syntax-jsx']
+    plugins: [
+      '@babel/plugin-transform-react-jsx', // Add this line
+      '@babel/plugin-syntax-jsx'
+    ]
   };
 };
