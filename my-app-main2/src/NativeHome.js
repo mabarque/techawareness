@@ -5,7 +5,7 @@ const windowWidth = Dimensions.get("window").width;
 
 const NativeHome = () => (
   <ScrollView style={styles.container} >
-    <Image style={[styles.image, { width: windowWidth }]} source={require("./assets/t1.jpeg")} />
+    <Image style={[styles.image, { width: windowWidth }]} source={require("../assets/t1.jpeg")} />
     <View style={styles.textContainer}>
       <Text style={styles.textHeader}>You are in home page from our Tech Awareness application</Text>
       <Text style={styles.text}>Our app offers a range of information on online safety, including device safety, online safety, tech-abuse, and IoT device safety. You can explore various pages to access interactive content and gain valuable knowledge about protecting yourself online. The "Identify the Abuse" page provides contact information for organizations that can offer further assistance if you or someone you know has experienced abuse. Use our app to learn and enhance your online safety. We encourage you to explore our app and make use of the resources provided to enhance your online safety.</Text>

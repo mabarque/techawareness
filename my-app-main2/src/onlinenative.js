@@ -12,7 +12,7 @@ const OnlineNative = () => {
   const [numberCheck, setNumberCheck] = useState(false);
   const [specialCheck, setSpecialCheck] = useState(false);
   const [cookieCheck, setCookieCheck] = useState(false);
-  const [imageSource, setImageSource] = useState(require('../onlineImage/kitten.png'));
+  const [imageSource, setImageSource] = useState(require('./onlineImage/kitten.png'));
   const togglePostSafety = () => {
     setIsSafePost(!isSafePost);
   };
@@ -32,7 +32,7 @@ const OnlineNative = () => {
     }
   };
   const handlePress = () => {
-    setImageSource(require('../onlineImage/kitten2.jpeg'));
+    setImageSource(require('./onlineImage/kitten2.jpeg'));
     alert('This link could have been dangerous, please be aware of bad links and consider downloading an antivirus.');
   };
   const cookies = () => {
@@ -44,7 +44,7 @@ const OnlineNative = () => {
       <View style={styles.containerIntro}>
       <Text style={[styles.title, { marginBottom: 10 }]}>Digital Self-Defense: Stay Safe Online</Text>
         <Text style={styles.paragraph}>Staying safe online is important due to the increasing risk of cyberbullying, online harassment, and stalking. To protect our online identity and mental health, we need to prioritize social media safety by being aware of the risks and implementing safe practices. By following some simple tips, we can enjoy the benefits of social media without compromising our privacy and security.</Text>
-        <Image source={require('./assets/triangle.jpg')} style={styles.imageIntro} />
+        <Image source={require('../assets/triangle.jpg')} style={styles.imageIntro} />
       </View>
       <View style={styles.titleContainer}>
         <Text style={styles.title}>This is an example of what not to post online</Text>
@@ -150,37 +150,37 @@ const OnlineNative = () => {
               <Text style={styles.buttonText}>{"\n"}{"\n"}{"\n"}FOR iOS: Open your {"\n"}           settings</Text>
             </View>
             <View >
-              <Image source={require('../arrow/purplearrow.png')} style={styles.arrow}/>
+              <Image source={require('./arrow/purplearrow.png')} style={styles.arrow}/>
             </View>
             <View style={styles.secondCircle}>
               <Text style={styles.buttonText}>{"\n"}{"\n"}{"\n"}Go to Safari</Text>
             </View>
             <View>
-              <Image source={require('../arrow/purplearrow.png')} style={styles.arrow}/>
+              <Image source={require('./arrow/purplearrow.png')} style={styles.arrow}/>
             </View>
             <View style={styles.thirdCircle}>
               <Text style={styles.buttonText}>{"\n"}{"\n"}{"\n"}Click Clear History{"\n"}               and{"\n"}    Website Data</Text>
             </View>
             <View>
-              <Image source={require('../arrow/purplearrow.png')} style={styles.arrow}/>
+              <Image source={require('./arrow/purplearrow.png')} style={styles.arrow}/>
             </View>
             <View style={styles.fourthCircle}>
               <Text style={styles.buttonText}>{"\n"}{"\n"}{"\n"} FOR Android: In your{"\n"} Chrome app click {"\n"}      on    '...'</Text>
             </View>
             <View>
-              <Image source={require('../arrow/purplearrow.png')} style={styles.arrow}/>
+              <Image source={require('./arrow/purplearrow.png')} style={styles.arrow}/>
             </View>
             <View style={styles.fifthCircle}>
               <Text style={styles.buttonText}>{"\n"}{"\n"}{"\n"}Select Privacy and {"\n"}            Security</Text>
             </View>
             <View>
-              <Image source={require('../arrow/purplearrow.png')} style={styles.arrow}/>
+              <Image source={require('./arrow/purplearrow.png')} style={styles.arrow}/>
             </View>
             <View style={styles.sixCircle}>
               <Text style={styles.buttonText}>{"\n"}{"\n"}{"\n"} Tap Clear Browsing {"\n"}               Data</Text>
             </View>
             <View >
-              <Image source={require('../arrow/purplearrow.png')} style={styles.arrow}/>
+              <Image source={require('./arrow/purplearrow.png')} style={styles.arrow}/>
             </View>
             <View style={styles.sevenCircle}>
               <Text style={styles.buttonText}>{"\n"}{"\n"}{"\n"} Insure Cookies and Site Data is Selected {"\n"}  and Tap Clear Data</Text>
@@ -225,7 +225,7 @@ const OnlineNative = () => {
                 account.
           </Text>
       </View>
-      <Image source={require('./assets/multi.png')} style={styles.imageMulti} />
+      <Image source={require('../assets/multi.png')} style={styles.imageMulti} />
     </ScrollView>
     );
 };

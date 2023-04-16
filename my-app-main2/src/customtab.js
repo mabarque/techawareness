@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
-import arrowUpIcon from './assets/Arrowup.png';
-import arrowDownIcon from './assets/Arrowdown.png';
+import arrowUpIcon from '../assets/Arrowup.png';
+import arrowDownIcon from '../assets/Arrowdown.png';
 
 const CustomTab = ({ title, children, isLast, index }) => {
   const [isOpen, setIsOpen] = useState(false);

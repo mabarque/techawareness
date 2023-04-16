@@ -13,7 +13,7 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen"; // Make sure to import this
-import styles2 from "./styles/Style.js";
+import styles2 from "../styles/Style.js";
 
 const screenWidth = Dimensions.get("window").width;
 const screenHeight = Dimensions.get("window").height;
@@ -74,7 +74,7 @@ const DeviceSafe = () => {
         <View style={styles.bannerImageContainer}>
           <Image
             style={styles.bannerImage}
-            source={require("./assets/ladyonphone.png")}
+            source={require("../assets/ladyonphone.png")}
           />
           <Text style={styles.bannerTitle}>Device Safety</Text>
         </View>
@@ -100,28 +100,28 @@ const DeviceSafe = () => {
               <Text style={styles.iconLabel}>IPHONES</Text>
               <Image
                 style={styles.iconImage}
-                source={require("./assets/appleicon.png")}
+                source={require("../assets/appleicon.png")}
               />
             </TouchableOpacity>
             <TouchableOpacity onPress={() => togglePopup(infoText.Android.join('\n\n'))}>
               <Text style={styles.iconLabel}>ANDROIDS</Text>
               <Image
                 style={styles.iconImage}
-                source={require("./assets/androidicon.png")}
+                source={require("../assets/androidicon.png")}
               />
             </TouchableOpacity>
             <TouchableOpacity onPress={() => togglePopup(infoText.Windows.join('\n\n'))}>
               <Text style={styles.iconLabel}>WINDOWS</Text>
               <Image
                 style={styles.iconImage}
-                source={require("./assets/windowsicon2.png")}
+                source={require("../assets/windowsicon2.png")}
               />
             </TouchableOpacity>
             <TouchableOpacity onPress={() => togglePopup(infoText.MacOS.join('\n\n'))}>
               <Text style={styles.iconLabel}>MACBOOKS</Text>
               <Image
                 style={styles.iconImage}
-                source={require("./assets/macbook1.png")}
+                source={require("../assets/macbook1.png")}
               />
             </TouchableOpacity>
           </View>

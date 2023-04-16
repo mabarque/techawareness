@@ -10,7 +10,7 @@ import {
   Linking,
 } from "react-native";
 import { Dimensions } from "react-native";
-import styles2 from "./styles/Style.js";
+import styles2 from "../styles/Style.js";
 
 const { width, height } = Dimensions.get("window");
 
@@ -221,7 +221,7 @@ const Quiz = () => {
       <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
         <View style={styles.container}>
           <ImageBackground
-            source={require("./assets/cloud.jpg")}
+            source={require("../assets/cloud.jpg")}
             style={styles.backgroundImage}
             resizeMode="cover"
           >
@@ -286,7 +286,7 @@ const Quiz = () => {
     <View style={{ flex: 1 }}>
       <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
         <ImageBackground
-          source={require("./assets/cloud.jpg")}
+          source={require("../assets/cloud.jpg")}
           style={styles.backgroundImage}
           resizeMode="cover"
         >

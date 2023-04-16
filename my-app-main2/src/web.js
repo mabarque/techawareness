@@ -3,7 +3,7 @@ import { View, Text, StatusBar, Platform } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import * as Font from "expo-font";
-import styles from "./styles/Style.js";
+import styles from "../styles/Style.js";
 import Identify from "./identify.js";
 import DeviceSafe from "./webdevicesafety.js";
 import MediaSafety from "./onlinesafety.js";
@@ -32,16 +32,16 @@ const PurpleHeader = () => {
   React.useEffect(() => {
     (async () => {
       await Font.loadAsync({
-        Nunito: require("./assets/fonts/Nunito.ttf"),
-        Exo: require("./assets/fonts/Exo.ttf"),
-        Anton: require("./assets/fonts/Anton-Regular.ttf"),
-        GolosBold: require("./assets/fonts/GolosText-Bold.ttf"),
-        GolosRegular: require("./assets/fonts/GolosText-Regular.ttf"),
-        Lemon: require("./assets/fonts/Lemon-Regular.ttf"),
-        fontcooper: require("./assets/fonts/Cooper.ttf"),
-        Sans: require("./assets/fonts/Sans-regular.ttf"),
-        Seriff: require("./assets/fonts/Seriff.ttf"),
-        genevafont: require("./assets/fonts/Geneva.ttf"),
+        Nunito: require("../assets/fonts/Nunito.ttf"),
+        Exo: require("../assets/fonts/Exo.ttf"),
+        Anton: require("../assets/fonts/Anton-Regular.ttf"),
+        GolosBold: require("../assets/fonts/GolosText-Bold.ttf"),
+        GolosRegular: require("../assets/fonts/GolosText-Regular.ttf"),
+        Lemon: require("../assets/fonts/Lemon-Regular.ttf"),
+        fontcooper: require("../assets/fonts/Cooper.ttf"),
+        Sans: require("../assets/fonts/Sans-regular.ttf"),
+        Seriff: require("../assets/fonts/Seriff.ttf"),
+        genevafont: require("../assets/fonts/Geneva.ttf"),
       });
       setFontLoaded(true);
     })();
